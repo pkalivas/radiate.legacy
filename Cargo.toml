@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "radiate_legacy",
+    "radiate_legacy_web",
+    "radiate_legacy_matrix_tree",
+    "examples/xor-neat",
+    "examples/xor-neat-backprop",
+    "examples/lstm-neat",
+    "examples/ism",
+    "examples/xor-evtree",
+    "examples/helloworld",
+	"examples/neat-web/neat-server",
+	"examples/neat-web/neat-client",
+]

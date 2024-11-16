@@ -155,7 +155,7 @@ fn work_results(sims: State<SimStorage>, id: String, get_work: bool, result: Jso
     sims.work_results(&id, result.0, get_work)
 }
 
-#[post("/simulations", format = "json", data = "<radiate>")]
+#[post("/simulations", format = "json", data = "<radiate_legacy>")]
 fn new_sim(sims: State<SimStorage>, radiate: Json<RadiateDto>) -> Option<JsonValue> {
     let sim = Simulation::new_from(radiate.0)?;
     let id = sims.add(sim)?;

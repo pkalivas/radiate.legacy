@@ -1,0 +1,165 @@
+{
+  "layers": [
+    {
+      "layer_type": "DensePool",
+      "layer": {
+        "type": "Dense",
+        "inputs": [
+          0,
+          1
+        ],
+        "outputs": [
+          2
+        ],
+        "nodes": [
+          {
+            "id": 0,
+            "outgoing": [
+              0,
+              4
+            ],
+            "incoming": [],
+            "activation": "Sigmoid",
+            "direction": "Forward",
+            "neuron_type": "Input",
+            "activated_value": 0.0,
+            "deactivated_value": 0.0,
+            "current_state": 0.0,
+            "previous_state": 0.0,
+            "error": 0.0,
+            "bias": -0.000104688545
+          },
+          {
+            "id": 1,
+            "outgoing": [
+              2,
+              1
+            ],
+            "incoming": [],
+            "activation": "Sigmoid",
+            "direction": "Forward",
+            "neuron_type": "Input",
+            "activated_value": 1.0,
+            "deactivated_value": 0.0,
+            "current_state": 0.0,
+            "previous_state": 0.0,
+            "error": 0.0,
+            "bias": 0.006870386
+          },
+          {
+            "id": 2,
+            "outgoing": [],
+            "incoming": [
+              {
+                "id": 0,
+                "src": 0,
+                "weight": -1.1506258
+              },
+              {
+                "id": 1,
+                "src": 1,
+                "weight": 0.47095704
+              },
+              {
+                "id": 3,
+                "src": 3,
+                "weight": 4.4422817
+              }
+            ],
+            "activation": "Sigmoid",
+            "direction": "Forward",
+            "neuron_type": "Output",
+            "activated_value": 0.91394866,
+            "deactivated_value": 0.07864651,
+            "current_state": 0.48221,
+            "previous_state": 0.48221,
+            "error": 0.0,
+            "bias": 0.0112529835
+          },
+          {
+            "id": 3,
+            "outgoing": [
+              3
+            ],
+            "incoming": [
+              {
+                "id": 2,
+                "src": 1,
+                "weight": -0.4639668
+              },
+              {
+                "id": 4,
+                "src": 0,
+                "weight": 0.5327715
+              }
+            ],
+            "activation": "Relu",
+            "direction": "Forward",
+            "neuron_type": "Hidden",
+            "activated_value": 0.0,
+            "deactivated_value": 0.0,
+            "current_state": -0.53878987,
+            "previous_state": -0.53878987,
+            "error": 0.0,
+            "bias": -0.07482307
+          }
+        ],
+        "edges": [
+          {
+            "id": 0,
+            "innov": "8ebba4b5-e680-47a5-aac6-18c7432e1f26",
+            "src": 0,
+            "dst": 2,
+            "weight": -1.1506258,
+            "active": true
+          },
+          {
+            "id": 1,
+            "innov": "0bada490-d424-474a-8e1d-952d6d240bfe",
+            "src": 1,
+            "dst": 2,
+            "weight": 0.47095704,
+            "active": true
+          },
+          {
+            "id": 2,
+            "innov": "7eaeb199-1679-4dbc-8163-8d98f5749a9b",
+            "src": 1,
+            "dst": 3,
+            "weight": -0.4639668,
+            "active": true
+          },
+          {
+            "id": 3,
+            "innov": "9268d128-7d95-4300-bdf7-79254f4e5188",
+            "src": 3,
+            "dst": 2,
+            "weight": 4.4422817,
+            "active": true
+          },
+          {
+            "id": 4,
+            "innov": "a56fe30c-0df7-4343-aa78-b2f4c40b9b1c",
+            "src": 0,
+            "dst": 3,
+            "weight": 0.5327715,
+            "active": true
+          }
+        ],
+        "edge_innov_map": {
+          "8ebba4b5-e680-47a5-aac6-18c7432e1f26": 0,
+          "9268d128-7d95-4300-bdf7-79254f4e5188": 3,
+          "0bada490-d424-474a-8e1d-952d6d240bfe": 1,
+          "a56fe30c-0df7-4343-aa78-b2f4c40b9b1c": 4,
+          "7eaeb199-1679-4dbc-8163-8d98f5749a9b": 2
+        },
+        "trace_states": null,
+        "layer_type": "DensePool",
+        "activation": "Sigmoid",
+        "fast_mode": false
+      }
+    }
+  ],
+  "input_size": 2,
+  "batch_size": 1
+}

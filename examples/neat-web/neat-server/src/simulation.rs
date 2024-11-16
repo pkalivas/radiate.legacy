@@ -1,5 +1,5 @@
-extern crate radiate;
-extern crate radiate_web;
+extern crate radiate_legacy;
+extern crate radiate_legacy_web;
 extern crate serde;
 extern crate serde_derive;
 
@@ -9,8 +9,8 @@ use serde::{Serialize, Deserialize};
 
 use uuid::Uuid;
 
-use radiate::prelude::*;
-use radiate_web::prelude::*;
+use radiate_legacy::prelude::*;
+use radiate_legacy_web::prelude::*;
 
 #[derive(Debug, Default, Clone, Serialize, Deserialize)]
 pub struct TrainingSet {

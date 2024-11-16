@@ -1,12 +1,12 @@
 
-extern crate radiate;
+extern crate radiate_legacy;
 extern crate rand;
 
 use std::error::Error;
 use std::time::Instant;
 use std::sync::{Arc, RwLock};
 use rand::Rng;
-use radiate::prelude::*;
+use radiate_legacy::prelude::*;
 
 
 

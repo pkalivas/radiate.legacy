@@ -1,0 +1,17 @@
+[package]
+name = "radiate_legacy_web"
+version = "0.1.13"
+authors = ["Peter Kalivas <peterkalivas@gmail.com>"]
+repository = "https://github.com/pkalivas/radiate.legacy"
+readme = "README.md"
+categories = ["science", "simulation", "algorithms", "evolve", "genetic"]
+keywords = ["search", "genetic", "learning", "artificial", "evolution"]
+edition = "2018"
+description = "Train Radiate remotely"
+license = "MIT"
+
+[dependencies]
+radiate_legacy={path="../radiate_legacy"}
+serde = {version ="1.0", features = ["rc"]}
+serde_json="1.0.44"
+serde_derive="1.0.104"

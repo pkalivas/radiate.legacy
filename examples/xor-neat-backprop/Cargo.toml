@@ -5,6 +5,6 @@ version = "1.0.0"
 authors = ["pkalivas <peterkalivas@gmail.com>"]
 
 [dependencies]
-radiate={path="../../radiate"}
+radiate_legacy={path= "../../radiate_legacy" }
 serde = "*"
 serde_json="*"

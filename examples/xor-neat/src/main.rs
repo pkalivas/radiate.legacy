@@ -1,9 +1,9 @@
 
-extern crate radiate;
+extern crate radiate_legacy;
 
 use std::error::Error;
 use std::time::Instant;
-use radiate::prelude::*;
+use radiate_legacy::prelude::*;
 
 extern crate serde_json;
 

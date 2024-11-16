@@ -7,8 +7,8 @@ edition = "2018"
 
 
 [dependencies]
-radiate={path="../../../radiate"}
-radiate_web={path="../../../radiate_web"}
+radiate_legacy={path= "../../../radiate_legacy" }
+radiate_legacy_web={path= "../../../radiate_legacy_web" }
 serde = {version ="1.0", features = ["rc"]}
 serde_json="1.0.44"
 serde_derive="1.0.104"

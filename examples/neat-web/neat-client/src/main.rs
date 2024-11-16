@@ -1,5 +1,5 @@
-extern crate radiate;
-extern crate radiate_web;
+extern crate radiate_legacy;
+extern crate radiate_legacy_web;
 extern crate serde;
 extern crate serde_json;
 extern crate serde_derive;

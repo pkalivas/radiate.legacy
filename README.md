@@ -62,7 +62,7 @@ A quick and easy example of implementing all the needed traits and running the g
 To run this:
 ```bash
 git clone https://github.com/pkalivas/radiate.git
-cd radiate
+cd radiate_legacy
 cargo build --verbose && cargo run --bin helloworld
 ```
 On my computer (Windows 10, x64-based, i7-7700 @ 4.20GHz, 32GB RAM) this finishes in less than half a second.

@@ -1,10 +1,10 @@
 
-extern crate radiate;
+extern crate radiate_legacy;
 extern crate csv;
 extern crate rayon;
 
 use std::error::Error;
-use radiate::prelude::*;
+use radiate_legacy::prelude::*;
 
 fn main() -> Result<(), Box<dyn Error>> {
 

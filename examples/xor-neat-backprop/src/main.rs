@@ -1,11 +1,11 @@
 
 
-extern crate radiate;
+extern crate radiate_legacy;
 extern crate serde_json;
 
 use std::error::Error;
 use std::time::Instant;
-use radiate::prelude::*;
+use radiate_legacy::prelude::*;
 
 
 fn main() -> Result<(), Box<dyn Error>> {
